@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+    
+    <script src="script.js"></script>
+
+    <title>Portfolio - Patryk Kaczmarczyk</title>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <div class="header">
+            PORTFOLIO - PATRICK
+        </div>
+
+        <div class="nav">
+            <ol>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">MY SKILLS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ol>
+        </div>
+
+        <div class="content">
+
+            <div class="aboutme">
+                <div id="a1" ><i class="demo-icon icon-user"></i></div>
+                <div id="a2" >Hi my name is Patrick. </br> I am interested in programming and  web development.</br> I am constantly improving my skills and learning new technologies. I am looking for an internship in the IT industry.</div>
+            </div>
+        
+            <div class="wrapper2">
+
+                <div style="clear: both;"></div>
+
+                <div class="block">
+                    <div id="g1" style="float: left;"><i class="icon-github"></i></div>
+                    <div id="g2" style="float: left;"><span id="ghlink2"><a href="#">You can see all of my projects</a> <span id="ghlink"><a href="#">HERE</a></span></div>
+                </div>
+
+                <div class="block">
+                    <div id="gr1" style="float: left;"><i class="icon-graduation-cap"></i></div>
+                    <div id="gr2" style="float: left;"><span id="pplink"><a href="#">Poznan University of Technology</a></span></div>
+
+                </div>
+
+                <div class="block">
+                    <div id="c1" style="float: left;"><i class="icon-mail"></i></div>
+                    <div id="c2" style="float: left;"><span id="mlink"><a href="#">patryk.kaczmarczykm@gmail.com</a></span></div>
+
+                </div>
+
+            </div>   
+
+            <div class="myskills" style="clear: both;">
+
+                <div id="msinfo"><i class="icon-keyboard"></i>MY SKILLS</div>
+
+                <div id="categories">
+                    <div class="languages">PROGRAMMING LANGUAGES</div>
+                    <div class="software">SOFTWARE</div>
+                </div>
+                <div id="elements">
+                    <div id="langueageswrap">
+                        <div class="boxl" id="react">REACT.JS</div>
+                        <div class="boxl" id="type">TYPE SCRIPT</div>
+                        <div class="boxl" id="tail">TAILWIND</div>
+                        <div class="boxl" id="css">CSS</div>
+                        <div class="boxl" id="html">HTML</div>
+                        <div class="boxl" id="js">JAVA SCRIPT</div>
+                        <div class="boxl" id="c">C</div>
+                        <div class="boxl" id="cpp">C++</div>
+                        <div class="boxl" id="cppobj">C++ | OBJ</div>
+                        <div class="boxl" id="csh">C#</div>
+                        <div class="boxl" id="python">PYTHON</div>
+                        <div class="boxl" id="r">R</div>
+
+                    </div>
+
+                    <div id="softwarewrap">
+                        <div class="boxs" id="fig">FIGMA | AXURE</div>
+                        <div class="boxs" id="git">GIT</div>
+                        <div class="boxs" id="docker">DOCKER</div>
+                        <div class="boxs" id="else">...</div>
+                    </div>
+                </div>
+  
+            </div>
+
+            
+        </div>
+        
+        <div class="footer">footer</div>
+
+    </div>
+
+    <script src="jquery-3.7.1.min.js"> </script>
+     
+    <script>
+ 
+    $(document).ready(function() {
+    var NavY = $('.nav').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('.nav').addClass('sticky');
+    } else {
+        $('.nav').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+</script>
+
+</body>
+</html>
